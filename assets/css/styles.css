@@ -1,0 +1,270 @@
+
+/* Resetando css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+   
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(/assets/img/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+  
+}
+
+.welcome{
+ 
+  width: 100%;
+  height: 100%;
+}
+
+.logo{
+    display: grid;
+    place-items: center;
+}
+
+
+header{
+ 
+    gap: 40px;
+    transition-duration: 600ms;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    backdrop-filter: blur(10px);
+  
+  
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    list-style: none;
+  
+}
+
+nav ul li {
+    font-size: .8rem;
+    transition-duration: 600ms;
+}   
+
+nav ul li a{
+    text-decoration: none;
+    color: #1f1f1f;
+    
+    font-weight: 600;
+ 
+ 
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+
+iframe {
+    border-radius: 5px;
+   border: none;
+   width: 70vw;
+   height: 640px;
+   margin-top: 160px;
+  }
+
+  h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 100px;
+  }
+
+  .container-shows ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+
+  .container-shows li{
+    list-style: none;
+  }
+ 
+
+  .container-shows li img{
+    transition: 1s;
+    width: 200px;
+  }
+
+  .container-shows li img:hover{
+    transform: scale(1.5);
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  footer{
+    height: 90vh;
+    width: 100vw;
+    background-image: url(/assets/img/upscale.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+
+  }
+
+  footer nav{
+   
+    position:fixed;
+    bottom: 0;
+    height: 40px;
+ 
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+
+  footer ul li {
+    font-size: 1.6rem;
+  }
+
+  .fa-youtube{
+    color: red;
+  }
+
+  .fa-spotify{
+    color: green;
+  }
+
+  .fa-instagram{
+    color: rebeccapurple;
+  }
+
+
+  .container-clipe2{
+    background-color: black;
+    width: 100%;
+   display: flex;
+   gap: 100px;
+   justify-content: center;
+   flex-wrap: wrap;
+  }
+
+  .iframe-spotify{
+    height: 360px;
+    width: 650px;
+  }
+
+
+  .second-video{
+    width: 400px;
+    height: 250px;
+    margin-bottom: 200px;
+  }
+
+
+
+  .container-shop{
+    border: 1px solid black;
+    width: 1240px;
+    height: 640px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-shop img{
+    height: 600px;
+    width: 400px;
+  }
+
+
+  .container-contatos{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .container-contatos ul{
+    flex-wrap: wrap;
+  }
+
+  .container-contatos li{
+    cursor: pointer;
+  }
+
+
+
+  .container-contatos a{
+    color: white;
+  }
+
+  .container-contatos h3, p, li, a {
+    color: white;
+  }
+  .img-contatos img{
+    width: 160px;
+  }
+
+
+
+  /* ACESSIBILIDADE */
+
+
+  @media (max-width: 425px) {
+    main iframe {
+      width: 100vw;
+      height: 400px;
+    }
+
+    .container-shows ul{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .iframe-spotify{
+      height: 360px;
+      width: 100vw;
+    }
+
+    .container-contatos ul{
+      flex-direction: column;
+    }
+  
+    footer{
+      height: 90vh;
+      width: 100%;
+      background-image: url(/assets/img/upscale.jpg);
+      background-attachment: fixed;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    
+      }
+  
+    }
+  
